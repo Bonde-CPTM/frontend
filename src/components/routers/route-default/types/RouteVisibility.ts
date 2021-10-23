@@ -1,0 +1,1 @@
+export type RouteVisibility = 'auth' | 'not-auth' | 'any'
