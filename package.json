@@ -1,5 +1,6 @@
 {
   "name": "frontend",
+  "homepage": "http://Bonde-CPTM.github.io/frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -33,6 +34,8 @@
     "yup": "^0.32.11"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -58,6 +61,7 @@
   },
   "devDependencies": {
     "@types/md5": "^2.3.1",
-    "@types/react-slick": "^0.23.7"
+    "@types/react-slick": "^0.23.7",
+    "gh-pages": "^3.2.3"
   }
 }
