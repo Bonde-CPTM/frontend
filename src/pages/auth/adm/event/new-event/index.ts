@@ -1,0 +1,1 @@
+export { NewEventPage as default } from './NewEventPage'
