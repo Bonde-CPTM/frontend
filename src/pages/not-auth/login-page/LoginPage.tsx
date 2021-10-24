@@ -24,7 +24,6 @@ export const LoginPage = () => {
             if (res.status === 201) {
                 if (res.data.content) {
                     if (res.data.content.token) {
-                        console.log('LOGINNNNNN', res.data.content)
                         setItem(EnumStorageKey.idCliente, res.data.content.idLogin as string)
                         setToken(res.data.content.token)
                         history.push('/')

@@ -38,9 +38,9 @@ export const MainPage = () => {
     const [open, setOpen] = useState(false)
     const [openScan, setOpenScan] = useState(false)
     const { getPoints, postPoints } = usePointService()
-    const [ points, setPoints ] = useState('0')
-    useEffect(()=>{
-        getPoints().then((res)=>{
+    const [points, setPoints] = useState('0')
+    useEffect(() => {
+        getPoints().then((res) => {
             setPoints(res.data.content.pontos)
         })
     }, [])
@@ -127,7 +127,7 @@ export const MainPage = () => {
                                 </Typography>
                             </Grid>
                             <Grid item>
-                                <Grid container>
+                                <Grid container justifyContent="center">
                                     {
                                         eventList.map((item, index) => {
                                             return (
@@ -169,7 +169,7 @@ export const MainPage = () => {
                             Eventos
                         </Typography>
 
-                        <Grid container>
+                        <Grid container justifyContent="center">
                             {
                                 eventListAll.map((item, index) => {
                                     return (
@@ -205,11 +205,200 @@ export const MainPage = () => {
                         </Grid>
                     </div>
                     <div>
-                        <div style={{
-                            
+                        <Typography variant="h5" align="center" style={{
+                            marginBottom: '10px'
                         }}>
+                            Status das linhas
+                        </Typography>
 
-                        </div>
+                        <Grid container spacing={2} style={{
+                            marginBottom: '100px',
+                        }}>
+                            <Grid item xs={12}>
+                                <div style={{
+                                    borderRadius: '10px',
+                                    padding: '20px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    boxShadow: '5px 5px 6px 0px rgba(134,134,134,0.5)',
+                                    background: '#da0467',
+                                    color: 'white',
+                                }}>
+                                    <Typography variant="h6">
+                                        Linha 7 - Rubi
+                                    </Typography>
+                                    <div style={{
+                                        margin: '10px',
+                                        width: '10px',
+                                        background: 'green',
+                                        height: '10px',
+                                        borderRadius: '100%'
+                                    }}>
+                                    </div>
+                                    <Typography variant="subtitle2">
+                                        Operação normal
+                                    </Typography>
+                                </div>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <div style={{
+                                    borderRadius: '10px',
+                                    padding: '20px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    boxShadow: '5px 5px 6px 0px rgba(134,134,134,0.5)',
+                                    background: '#bab6a8',
+                                    color: 'white',
+                                }}>
+                                    <Typography variant="h6">
+                                        Linha 8 - Diamante
+                                    </Typography>
+                                    <div style={{
+                                        margin: '10px',
+                                        width: '10px',
+                                        background: 'green',
+                                        height: '10px',
+                                        borderRadius: '100%'
+                                    }}>
+                                    </div>
+                                    <Typography variant="subtitle2">
+                                        Operação normal
+                                    </Typography>
+                                </div>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <div style={{
+                                    borderRadius: '10px',
+                                    padding: '20px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    boxShadow: '5px 5px 6px 0px rgba(134,134,134,0.5)',
+                                    background: '#00ddcd',
+                                    color: 'white',
+                                }}>
+                                    <Typography variant="h6">
+                                        Linha 9 - Esmeralda
+                                    </Typography>
+                                    <div style={{
+                                        margin: '10px',
+                                        width: '10px',
+                                        background: 'yellow',
+                                        height: '10px',
+                                        borderRadius: '100%'
+                                    }}>
+                                    </div>
+                                    <Typography variant="subtitle2">
+                                        Operação moderada
+                                    </Typography>
+                                </div>
+                            </Grid>
+                          
+                            <Grid item xs={12}>
+                                <div style={{
+                                    borderRadius: '10px',
+                                    padding: '20px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    boxShadow: '5px 5px 6px 0px rgba(134,134,134,0.5)',
+                                    background: '#00adce',
+                                    color: 'white',
+                                }}>
+                                    <Typography variant="h6">
+                                        Linha 10 - Esmeralda
+                                    </Typography>
+                                    <div style={{
+                                        margin: '10px',
+                                        width: '10px',
+                                        background: 'green',
+                                        height: '10px',
+                                        borderRadius: '100%'
+                                    }}>
+                                    </div>
+                                    <Typography variant="subtitle2">
+                                        Operação normal
+                                    </Typography>
+                                </div>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <div style={{
+                                    borderRadius: '10px',
+                                    padding: '20px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    boxShadow: '5px 5px 6px 0px rgba(134,134,134,0.5)',
+                                    background: '#f7814b',
+                                    color: 'white',
+                                }}>
+                                    <Typography variant="h6">
+                                        Linha 11 - Coral
+                                    </Typography>
+                                    <div style={{
+                                        margin: '10px',
+                                        width: '10px',
+                                        background: 'green',
+                                        height: '10px',
+                                        borderRadius: '100%'
+                                    }}>
+                                    </div>
+                                    <Typography variant="subtitle2">
+                                        Operação normal
+                                    </Typography>
+                                </div>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <div style={{
+                                    borderRadius: '10px',
+                                    padding: '20px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    boxShadow: '5px 5px 6px 0px rgba(134,134,134,0.5)',
+                                    background: '#271c96',
+                                    color: 'white',
+                                }}>
+                                    <Typography variant="h6">
+                                        Linha 12 - Safira
+                                    </Typography>
+                                    <div style={{
+                                        margin: '10px',
+                                        width: '10px',
+                                        background: 'green',
+                                        height: '10px',
+                                        borderRadius: '100%'
+                                    }}>
+                                    </div>
+                                    <Typography variant="subtitle2">
+                                        Operação sobrecarregada
+                                    </Typography>
+                                </div>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <div style={{
+                                    borderRadius: '10px',
+                                    padding: '20px',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    boxShadow: '5px 5px 6px 0px rgba(134,134,134,0.5)',
+                                    background: '#00d664',
+                                    color: 'white',
+                                }}>
+                                    <Typography variant="h6">
+                                        Linha 13 - Jade
+                                    </Typography>
+                                    <div style={{
+                                        margin: '10px',
+                                        width: '10px',
+                                        background: 'green',
+                                        height: '10px',
+                                        borderRadius: '100%'
+                                    }}>
+                                    </div>
+                                    <Typography variant="subtitle2">
+                                        Operação normal
+                                    </Typography>
+                                </div>
+                            </Grid>
+                        </Grid>
+
                     </div>
                     <div>
                         <div>
@@ -342,8 +531,8 @@ export const MainPage = () => {
                                         width={'100%'}
                                         onUpdate={(err, result) => {
                                             if (result) {
-                                                postPoints().then((res)=>{
-                                                    if(res.status === 200 || res.status === 204){
+                                                postPoints().then((res) => {
+                                                    if (res.status === 200 || res.status === 204) {
                                                         setPoints(res.data.content.pontos)
                                                         setOpenScan(false)
                                                         alert('Sucesso ao verificar o código')
