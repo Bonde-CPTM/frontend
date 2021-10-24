@@ -18,7 +18,7 @@ export const RouteDefault = (props: RouteDefaultProps) => {
                 history.push('/login')
             }
         }
-    }, [getToken, props.visibility])
+    }, [getToken, props.visibility, history])
     return (
         <>
             <Route
