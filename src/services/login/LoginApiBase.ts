@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export const loginApiBase = axios.create({
-    baseURL: 'https://logincptm.herokuapp.com/'
+    baseURL: 'https://login-bondecptm.herokuapp.com/'
 })

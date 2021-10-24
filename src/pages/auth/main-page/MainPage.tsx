@@ -205,7 +205,11 @@ export const MainPage = () => {
                         </Grid>
                     </div>
                     <div>
-                        Trens
+                        <div style={{
+                            
+                        }}>
+
+                        </div>
                     </div>
                     <div>
                         <div>

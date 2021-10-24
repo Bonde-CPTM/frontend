@@ -1,7 +1,5 @@
 import axios from "axios";
 
 export const PointApiBase = axios.create({
-    
-
-    baseURL: 'https://pointcptm.herokuapp.com/'
+    baseURL: 'https://ponto-bondecptm.herokuapp.com/'
 })
