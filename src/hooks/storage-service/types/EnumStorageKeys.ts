@@ -1,3 +1,4 @@
 export enum EnumStorageKey {
-    accessToken = 'ACCESS_TOKEN'
+    accessToken = 'ACCESS_TOKEN',
+    idCliente = 'ID_CLIENTE'
 }

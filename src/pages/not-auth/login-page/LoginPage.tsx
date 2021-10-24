@@ -6,10 +6,13 @@ import { useTokenService } from "hooks/tolen-service/TokenService"
 import { useState } from "react"
 import md5 from 'md5'
 import { useHistory } from "react-router-dom"
+import { useStorageService } from "hooks/storage-service"
+import { EnumStorageKey } from "hooks/storage-service/types/EnumStorageKeys"
 
 export const LoginPage = () => {
     const { signIn } = useLoginService()
     const { setToken } = useTokenService()
+    const { setItem } = useStorageService()
     const [errorMessage, setErrorMessage] = useState<string | null | undefined>(null)
     const history = useHistory()
     const handleSubmit = (model: LoginModel) => {
@@ -21,6 +24,7 @@ export const LoginPage = () => {
             if (res.status === 201) {
                 if (res.data.content) {
                     if (res.data.content.token) {
+                        setItem(EnumStorageKey.idCliente, res.data.content.idLogin as string)
                         setToken(res.data.content.token)
                         history.push('/')
                     }

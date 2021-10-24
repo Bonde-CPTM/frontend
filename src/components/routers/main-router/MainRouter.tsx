@@ -5,9 +5,11 @@ import { InputDefault } from 'components/inputs/input-default'
 
 const LazyLoginPage = lazy(() => import('pages/not-auth/login-page'))
 const LazySignupPage = lazy(() => import('pages/not-auth/signup-page'))
-const LazyNewEventPage = lazy(() => import('pages/auth/adm/event/new-event'))
-const LazyEventEditPage = lazy(() => import('pages/auth/adm/event/event-edit'))
-const LazyEventListPage = lazy(() => import('pages/auth/adm/event/event-list'))
+const LazyAdmNewEventPage = lazy(() => import('pages/auth/adm/event/new-event'))
+const LazyAdmEventEditPage = lazy(() => import('pages/auth/adm/event/event-edit'))
+const LazyAdmEventListPage = lazy(() => import('pages/auth/adm/event/event-list'))
+const LazyMainPage = lazy(() => import('pages/auth/main-page'))
+const LazyEventPage = lazy(() => import('pages/auth/event-page'))
 
 
 export const MainRouter = () => {
@@ -24,20 +26,20 @@ export const MainRouter = () => {
                             <LazySignupPage />
                         )} />
                          <RouteDefault exact path="/adm/event/new-event" visibility="auth" component={(
-                            <LazyNewEventPage />
+                            <LazyAdmNewEventPage />
                         )} />
                         <RouteDefault exact path="/adm/event/:id" visibility="auth" component={(
-                            <LazyEventEditPage />
+                            <LazyAdmEventEditPage />
                         )} />
                           <RouteDefault exact path="/adm/event" visibility="auth" component={(
-                            <LazyEventListPage />
+                            <LazyAdmEventListPage />
                         )} />
-                        
-                        <RouteDefault exact path="/" visibility="auth"  component={<div>
-                            <InputDefault type="date" onChange={(e)=>{
-                                console.log(e)
-                            }} />
-                        </div>} />
+                          <RouteDefault exact path="/event" visibility="auth" component={(
+                            <LazyEventPage />
+                        )} />
+                        <RouteDefault exact path="/" visibility="auth"  component={(
+                            <LazyMainPage />
+                        )} />
 
                     </Switch>
                 </Router>
