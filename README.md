@@ -1,4 +1,4 @@
-#Sobre o projeto
+# Sobre o projeto
 Aplicativo que possibilita a cocriação de smart stations conectando usuários, CPTM, organizações públicas e privadas. 
 
 Concedendo a geração de dados, validações e insights para a Gestão da CPTM.
@@ -17,7 +17,7 @@ Vinicius Serafim: https://www.linkedin.com/in/viniciusm...
 Wesley Takao: https://www.linkedin.com/in/wesley-ta...
 Yasmin Alvernoz: https://www.linkedin.com/in/yasminalv...
 
-#Como rodar o projeto
+# Como rodar o projeto
 ## execute o comando npm install e depois o comando npm start
 
 # Getting Started with Create React App
