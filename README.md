@@ -1,3 +1,6 @@
+#Como rodar o projeto
+## execute o comando npm install e depois o comando npm start
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
