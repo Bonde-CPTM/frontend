@@ -18,7 +18,7 @@ Wesley Takao: https://www.linkedin.com/in/wesley-ta...
 Yasmin Alvernoz: https://www.linkedin.com/in/yasminalv...
 
 # Como rodar o projeto
-Execute o comando npm install e depois o comando npm start
+Execute o comando npm install e depois o comando npm start no seu prompt de comando
 
 # Getting Started with Create React App
 
